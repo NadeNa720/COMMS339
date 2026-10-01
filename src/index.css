@@ -1,0 +1,221 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------
+   Design tokens — Kent’s Camera Castle
+   Palette: near-black / charcoal, white, light neutral gray, GoPro-like blue.
+   ------------------------------------------------------------------ */
+@theme {
+  --font-sans:
+    'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+
+  /* Near-black / charcoal scale */
+  --color-ink-950: #0a0a0b;
+  --color-ink-900: #111113;
+  --color-ink-800: #1a1a1e;
+  --color-ink-700: #26262b;
+  --color-ink-600: #3a3a41;
+
+  /* Light neutral grays */
+  --color-mist-50: #f7f7f8;
+  --color-mist-100: #f1f1f3;
+  --color-mist-200: #e4e4e8;
+  --color-mist-300: #cfcfd6;
+  --color-mist-400: #a0a0aa;
+  --color-mist-500: #71717c;
+
+  /* GoPro-like blue accent */
+  --color-brand-300: #7dbcff;
+  --color-brand-400: #3d9bff;
+  --color-brand-500: #0a7aff;
+  --color-brand-600: #0063db;
+  --color-brand-700: #004fb3;
+
+  --color-star: #f5b301;
+
+  --shadow-card: 0 1px 2px rgb(10 10 11 / 0.06), 0 8px 24px -12px rgb(10 10 11 / 0.18);
+  --shadow-card-hover: 0 2px 4px rgb(10 10 11 / 0.08), 0 24px 48px -20px rgb(10 10 11 / 0.35);
+  --shadow-glow: 0 10px 40px -10px rgb(10 122 255 / 0.55);
+
+  --radius-card: 1.25rem;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ------------------------------------------------------------------
+   Base
+   ------------------------------------------------------------------ */
+@layer base {
+  html {
+    /* Sticky header offset for anchor navigation */
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-feature-settings: 'cv11', 'ss01', 'ss03';
+    text-rendering: optimizeLegibility;
+    /* Avoid the grey flash on tap in mobile WebKit/Blink */
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: clip;
+  }
+
+  /* Remove the 300ms tap delay / double-tap zoom on controls; keep pinch-zoom on content */
+  a,
+  button,
+  input,
+  summary,
+  [role='button'] {
+    touch-action: manipulation;
+  }
+
+  /* Horizontal carousels: no overscroll bounce leaking into the page */
+  .snap-x {
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  ::selection {
+    background: var(--color-brand-500);
+    color: #fff;
+  }
+
+  /* Native dialog reset */
+  dialog {
+    max-width: none;
+    max-height: none;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+  }
+  dialog::backdrop {
+    background: rgb(10 10 11 / 0.72);
+    backdrop-filter: blur(4px);
+  }
+
+  /* Remove the default marker on <summary> */
+  summary {
+    list-style: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Utilities
+   ------------------------------------------------------------------ */
+@utility container-x {
+  width: 100%;
+  max-width: 80rem; /* 1280px */
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  @media (width >= 40rem) {
+    padding-inline: 2rem;
+  }
+  @media (width >= 64rem) {
+    padding-inline: 2.5rem;
+  }
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Consistent focus ring for all interactive elements */
+@utility focus-ring {
+  outline: none;
+  &:focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+  }
+}
+
+@utility focus-ring-light {
+  outline: none;
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+}
+
+/* Eyebrow label */
+@utility eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Section spacing rhythm */
+@utility section-y {
+  padding-block: 3.75rem;
+  @media (width >= 40rem) {
+    padding-block: 6rem;
+  }
+  @media (width >= 64rem) {
+    padding-block: 7.5rem;
+  }
+}
+
+/* Text on top of photos */
+@utility text-shadow-soft {
+  text-shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 8px 24px rgb(0 0 0 / 0.35);
+}
+
+/* Slide-in used by the cart drawer */
+@keyframes drawer-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes sheet-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@utility animate-drawer-in {
+  animation: drawer-in 0.32s var(--ease-out-soft);
+}
+@utility animate-sheet-in {
+  animation: sheet-in 0.36s var(--ease-out-soft);
+}
+@utility animate-fade-up {
+  animation: fade-up 0.32s var(--ease-out-soft);
+}

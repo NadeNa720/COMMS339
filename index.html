@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- On-site SEO: primary keyword "GoPro action cameras" in title, description and H1 -->
+    <title>GoPro Action Cameras | Kent’s Camera Castle</title>
+    <meta
+      name="description"
+      content="Shop GoPro action cameras at Kent’s Camera Castle. Smooth 4K video, rugged waterproof design and adventure-ready mounts. Secure checkout and easy returns."
+    />
+    <meta name="theme-color" content="#0a0a0b" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://kentscameracastle.example/" />
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kent’s Camera Castle" />
+    <meta property="og:title" content="Capture Every Adventure. | GoPro Action Cameras" />
+    <meta
+      property="og:description"
+      content="Smooth 4K video. Rugged, waterproof design. A GoPro that goes wherever you do."
+    />
+    <meta property="og:image" content="/images/hero-mountain-biker.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fast perceived loading: fetch the hero image as early as possible -->
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-mountain-biker.jpg"
+      imagesrcset="/images/hero-mountain-biker-480.webp 480w, /images/hero-mountain-biker-768.webp 768w, /images/hero-mountain-biker.webp 1280w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+
+    <!--
+      Structured data. NOTE: prices, ratings and retailer status are ILLUSTRATIVE
+      placeholders for an academic LPO design concept (see src/data/products.js).
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Kent’s Camera Castle",
+        "description": "Retailer of GoPro action cameras and adventure accessories (design concept).",
+        "url": "https://kentscameracastle.example/",
+        "slogan": "More adventure. Every frame.",
+        "makesOffer": {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "GoPro Action Camera",
+            "category": "Action Cameras"
+          },
+          "priceCurrency": "EUR",
+          "price": "349",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-white text-ink-900 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

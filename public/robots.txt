@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update once deployed:
+# Sitemap: https://your-app.up.railway.app/sitemap.xml

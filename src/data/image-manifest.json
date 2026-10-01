@@ -1,0 +1,308 @@
+{
+  "benefit-4k.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "benefit-4k-480.webp",
+        "width": 480
+      },
+      {
+        "file": "benefit-4k-768.webp",
+        "width": 768
+      },
+      {
+        "file": "benefit-4k.webp",
+        "width": 864
+      }
+    ]
+  },
+  "benefit-compact.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "benefit-compact-480.webp",
+        "width": 480
+      },
+      {
+        "file": "benefit-compact-768.webp",
+        "width": 768
+      },
+      {
+        "file": "benefit-compact.webp",
+        "width": 864
+      }
+    ]
+  },
+  "benefit-stabilized.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "benefit-stabilized-480.webp",
+        "width": 480
+      },
+      {
+        "file": "benefit-stabilized-768.webp",
+        "width": 768
+      },
+      {
+        "file": "benefit-stabilized.webp",
+        "width": 864
+      }
+    ]
+  },
+  "benefit-waterproof.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "benefit-waterproof-480.webp",
+        "width": 480
+      },
+      {
+        "file": "benefit-waterproof-768.webp",
+        "width": 768
+      },
+      {
+        "file": "benefit-waterproof.webp",
+        "width": 864
+      }
+    ]
+  },
+  "cta-mountain-lake.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "file": "cta-mountain-lake-480.webp",
+        "width": 480
+      },
+      {
+        "file": "cta-mountain-lake-768.webp",
+        "width": 768
+      },
+      {
+        "file": "cta-mountain-lake.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "hero-mountain-biker.jpg": {
+    "width": 1280,
+    "height": 720,
+    "variants": [
+      {
+        "file": "hero-mountain-biker-480.webp",
+        "width": 480
+      },
+      {
+        "file": "hero-mountain-biker-768.webp",
+        "width": 768
+      },
+      {
+        "file": "hero-mountain-biker.webp",
+        "width": 1280
+      }
+    ]
+  },
+  "product-battery.jpg": {
+    "width": 1024,
+    "height": 1024,
+    "variants": [
+      {
+        "file": "product-battery-480.webp",
+        "width": 480
+      },
+      {
+        "file": "product-battery-768.webp",
+        "width": 768
+      },
+      {
+        "file": "product-battery.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "product-case.jpg": {
+    "width": 1024,
+    "height": 1024,
+    "variants": [
+      {
+        "file": "product-case-480.webp",
+        "width": 480
+      },
+      {
+        "file": "product-case-768.webp",
+        "width": 768
+      },
+      {
+        "file": "product-case.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "product-gopro-hero.jpg": {
+    "width": 1024,
+    "height": 1024,
+    "variants": [
+      {
+        "file": "product-gopro-hero-480.webp",
+        "width": 480
+      },
+      {
+        "file": "product-gopro-hero-768.webp",
+        "width": 768
+      },
+      {
+        "file": "product-gopro-hero.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "product-mount-kit.jpg": {
+    "width": 1024,
+    "height": 1024,
+    "variants": [
+      {
+        "file": "product-mount-kit-480.webp",
+        "width": 480
+      },
+      {
+        "file": "product-mount-kit-768.webp",
+        "width": 768
+      },
+      {
+        "file": "product-mount-kit.webp",
+        "width": 1024
+      }
+    ]
+  },
+  "story-alex.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "story-alex-480.webp",
+        "width": 480
+      },
+      {
+        "file": "story-alex-768.webp",
+        "width": 768
+      },
+      {
+        "file": "story-alex.webp",
+        "width": 864
+      }
+    ]
+  },
+  "story-jamie.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "story-jamie-480.webp",
+        "width": 480
+      },
+      {
+        "file": "story-jamie-768.webp",
+        "width": 768
+      },
+      {
+        "file": "story-jamie.webp",
+        "width": 864
+      }
+    ]
+  },
+  "story-sam.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "story-sam-480.webp",
+        "width": 480
+      },
+      {
+        "file": "story-sam-768.webp",
+        "width": 768
+      },
+      {
+        "file": "story-sam.webp",
+        "width": 864
+      }
+    ]
+  },
+  "usecase-outdoor.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "usecase-outdoor-480.webp",
+        "width": 480
+      },
+      {
+        "file": "usecase-outdoor-768.webp",
+        "width": 768
+      },
+      {
+        "file": "usecase-outdoor.webp",
+        "width": 864
+      }
+    ]
+  },
+  "usecase-sports.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "usecase-sports-480.webp",
+        "width": 480
+      },
+      {
+        "file": "usecase-sports-768.webp",
+        "width": 768
+      },
+      {
+        "file": "usecase-sports.webp",
+        "width": 864
+      }
+    ]
+  },
+  "usecase-travel.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "usecase-travel-480.webp",
+        "width": 480
+      },
+      {
+        "file": "usecase-travel-768.webp",
+        "width": 768
+      },
+      {
+        "file": "usecase-travel.webp",
+        "width": 864
+      }
+    ]
+  },
+  "usecase-vlogging.jpg": {
+    "width": 864,
+    "height": 1152,
+    "variants": [
+      {
+        "file": "usecase-vlogging-480.webp",
+        "width": 480
+      },
+      {
+        "file": "usecase-vlogging-768.webp",
+        "width": 768
+      },
+      {
+        "file": "usecase-vlogging.webp",
+        "width": 864
+      }
+    ]
+  }
+}
