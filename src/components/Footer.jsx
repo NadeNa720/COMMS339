@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { ANCHORS, FOOTER_LINKS, SITE, SOCIAL_LINKS, SUPPORT_ITEMS } from '../data/site';
 import Icon from './ui/Icon';
-import Logo from './Logo';
 
 export default function Footer() {
   // When a footer link targets a support accordion (#shipping, #returns, #faq), open it.
@@ -21,8 +20,7 @@ export default function Footer() {
       <div className="container-x grid gap-10 py-12 sm:gap-12 sm:py-16 lg:grid-cols-12 lg:gap-8 lg:py-20">
         {/* Brand */}
         <div className="lg:col-span-4">
-          <a href={ANCHORS.top} className="focus-ring-light inline-flex items-center gap-2.5 rounded-lg">
-            <Logo className="h-7 w-7 text-brand-400" />
+          <a href={ANCHORS.top} className="focus-ring-light inline-flex items-center rounded-lg">
             <span className="text-sm font-extrabold tracking-[0.16em]">{SITE.wordmark}</span>
           </a>
           <p className="mt-4 text-2xl font-bold tracking-tight text-white/90">{SITE.tagline}</p>

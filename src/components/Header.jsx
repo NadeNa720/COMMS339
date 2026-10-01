@@ -4,7 +4,6 @@ import { useStore } from '../store/useStore';
 import { trackEvent } from '../lib/analytics';
 import Button from './ui/Button';
 import Icon from './ui/Icon';
-import Logo from './Logo';
 
 const iconButton =
   'focus-ring-light inline-flex h-10 w-10 items-center justify-center rounded-full text-white/85 transition hover:bg-white/10 hover:text-white sm:h-11 sm:w-11';
@@ -88,11 +87,10 @@ export default function Header() {
         {/* Wordmark */}
         <a
           href={ANCHORS.top}
-          className="focus-ring-light -ml-1 flex min-w-0 items-center gap-2 rounded-lg px-1 sm:gap-2.5"
+          className="focus-ring-light -ml-1 flex min-w-0 items-center rounded-lg px-1"
           aria-label={`${SITE.name} — home`}
         >
-          <Logo className="h-6 w-6 shrink-0 text-brand-400 sm:h-7 sm:w-7" />
-          <span className="truncate text-[10px] font-extrabold tracking-[0.08em] whitespace-nowrap min-[400px]:text-[11px] min-[400px]:tracking-[0.1em] sm:text-sm sm:tracking-[0.16em]">
+          <span className="truncate text-[11px] font-extrabold tracking-[0.1em] whitespace-nowrap min-[400px]:text-xs min-[400px]:tracking-[0.12em] sm:text-sm sm:tracking-[0.16em]">
             {SITE.wordmark}
           </span>
         </a>

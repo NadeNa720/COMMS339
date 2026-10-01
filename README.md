@@ -43,7 +43,7 @@ The repo ships with `railway.json`, so Railway picks up the build and start comm
 1. Push this folder to a Git repository (GitHub, GitLab, or Railway’s own repo).
 2. In [Railway](https://railway.com): **New Project → Deploy from GitHub repo** and select the repo.
    - If this folder is a sub-directory of a larger repo, set **Settings → Root Directory** to `kents-camera-castle`.
-3. Railway (Railpack) runs `npm ci && npm run build`, then `npm start`, which serves `dist/` on the
+3. Railway (Railpack) installs dependencies, runs `npm run build` (from `railway.json`), then `npm start`, which serves `dist/` on the
    port Railway injects via `$PORT`.
 4. Open **Settings → Networking → Generate Domain** to get a public URL.
 
@@ -86,7 +86,6 @@ kents-camera-castle/
 │  │  ├─ QuickViewModal.jsx   # "View product"
 │  │  ├─ CartDrawer.jsx       # shopping bag (demo checkout)
 │  │  ├─ Toast.jsx
-│  │  ├─ Logo.jsx
 │  │  └─ ui/                  # Button, Modal, SmartImage, Icon, Stars, SectionHeading, TrustLine
 │  ├─ data/
 │  │  ├─ site.js              # brand copy, nav, anchors, footer, demo video id
