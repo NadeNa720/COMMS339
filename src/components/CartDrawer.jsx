@@ -36,7 +36,7 @@ export default function CartDrawer() {
               <Icon name="bag" className="h-7 w-7" />
             </span>
             <p className="text-lg font-semibold">Your bag is empty</p>
-            <p className="max-w-xs text-sm text-mist-500">Start with the GoPro action camera, then add mounts and spares.</p>
+            <p className="max-w-xs text-sm text-mist-500">Start with the GoPro HERO13, then add mounts and spares.</p>
             <Button href={ANCHORS.gopro} onClick={closeCart} track={{ name: 'select_item', params: { source: 'empty_bag' } }}>
               Shop GoPro
             </Button>

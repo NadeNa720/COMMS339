@@ -6,21 +6,21 @@ import { IMAGES } from './images';
  * ----------------------------------------------------------------------------
  *  All `price` values below are ILLUSTRATIVE placeholders for an academic
  *  landing-page-optimization (LPO) design concept. They are not real offers.
- *  Prices are stored as whole euros; change `currency` / `locale` in
+ *  Prices are stored in US dollars; change `CURRENCY` here and the locale in
  *  `formatPrice` (src/lib/format.js) if you switch markets.
  * ============================================================================
  */
-export const CURRENCY = 'EUR';
+export const CURRENCY = 'USD';
 
 export const PRODUCTS = [
   {
-    id: 'gopro-action-camera',
-    name: 'GoPro Action Camera',
-    price: 349, // PLACEHOLDER
-    shortDescription: 'Smooth 4K video, rugged waterproof body and best-in-class stabilization.',
+    id: 'gopro-hero13',
+    name: 'GoPro HERO13',
+    price: 449.99, // PLACEHOLDER — matches the figure used across the LPO report
+    shortDescription: 'Smooth 5.3K video, rugged waterproof body and best-in-class stabilization.',
     description:
-      'The camera that started it all. Shoot smooth 4K video, dive in without a housing and mount it anywhere. Ships with a mounting buckle, thumb screw and a rechargeable battery.',
-    specs: ['4K video', 'Waterproof out of the box', 'HyperSmooth-style stabilization', 'Voice control'],
+      'The flagship GoPro. Shoot smooth 5.3K video, dive in without a housing and mount it anywhere. Ships with a mounting buckle, thumb screw and a rechargeable Enduro battery.',
+    specs: ['5.3K60 / 4K120 video', 'Waterproof to 10 m out of the box', 'HyperSmooth 6.0 stabilization', 'Voice control'],
     image: IMAGES.products.gopro,
     /** The hero product: rendered with extra visual emphasis in the grid. */
     featured: true,

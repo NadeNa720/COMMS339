@@ -94,7 +94,7 @@ kents-camera-castle/
 │  │  └─ content.js           # trust items, benefits, use cases, PLACEHOLDER testimonials
 │  ├─ lib/
 │  │  ├─ analytics.js         # trackEvent() -> dataLayer / gtag when present
-│  │  └─ format.js            # price formatting (EUR)
+│  │  └─ format.js            # price formatting (USD)
 │  └─ store/                  # StoreProvider + useStore (bag, modals, toast)
 ├─ railway.json               # Railway build/start config
 ├─ vite.config.js

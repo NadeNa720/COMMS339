@@ -44,8 +44,8 @@ export default function Hero() {
           >
             Capture Every Adventure.
           </h1>
-          <p className="text-shadow-soft mt-5 max-w-md text-lg leading-relaxed text-white/85 sm:text-xl">
-            Smooth 4K video. Rugged, waterproof design.
+          <p className="text-shadow-soft mt-5 max-w-md text-lg leading-relaxed text-white/85 sm:max-w-lg sm:text-xl">
+            Smooth 5.3K video. Rugged, waterproof design.
             <br className="hidden sm:block" /> A GoPro that goes wherever you do.
           </p>
 

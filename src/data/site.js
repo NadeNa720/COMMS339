@@ -69,7 +69,7 @@ export const SUPPORT_ITEMS = [
   {
     id: 'shipping',
     title: 'Shipping',
-    body: 'Orders ship within 1–2 business days. Standard delivery is free on orders over €50; express options are available at checkout.',
+    body: 'Orders ship within 1–2 business days. Standard delivery is free on orders over $50; express options are available at checkout.',
   },
   {
     id: 'returns',

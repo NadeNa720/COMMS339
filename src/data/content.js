@@ -20,7 +20,7 @@ export const TRUST_ITEMS = [
 export const BENEFITS = [
   { id: 'waterproof', title: 'Waterproof', tagline: 'Dive into the action.', image: IMAGES.benefits.waterproof },
   { id: 'stabilized', title: 'Stabilized video', tagline: 'Keep the moment smooth.', image: IMAGES.benefits.stabilized },
-  { id: '4k', title: '4K recording', tagline: 'Bring every detail home.', image: IMAGES.benefits.fourK },
+  { id: '5k', title: '5.3K recording', tagline: 'Bring every detail home.', image: IMAGES.benefits.fourK },
   { id: 'compact', title: 'Compact & durable', tagline: 'Pack light. Go further.', image: IMAGES.benefits.compact },
 ];
 

@@ -31,7 +31,7 @@ export default function FinalCTA() {
           Ready to Capture Your Next Adventure?
         </h2>
         <p className="text-shadow-soft mx-auto mt-4 max-w-md text-lg text-balance text-white/80">
-          The GoPro action camera, adventure-ready and in stock.
+          The GoPro HERO13, adventure-ready and in stock.
         </p>
         <div className="mt-9 flex flex-col items-center gap-4">
           <Button
